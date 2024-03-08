@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/green"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chakrapetchbold"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:orientation="vertical"
+        android:layout_marginLeft="0sp"
+        android:layout_marginRight="0sp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:id="@+id/database"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/rounded_background">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imgciv"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/databasde"
+                        app:shapeAppearanceOverlay="@style/corner" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginEnd="10dp">
+                        <TextView
+                            android:id="@+id/civtext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/chakrapetchbold"
+                            android:text="Database Management"
+                            android:textColor="@color/green"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/CN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/rounded_background">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/cn"
+                        app:shapeAppearanceOverlay="@style/corner" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginEnd="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/chakrapetchbold"
+                            android:text="Computer Networks"
+                            android:textColor="@color/green"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/rounded_background">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/system"
+                        app:shapeAppearanceOverlay="@style/corner" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginEnd="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/chakrapetchbold"
+                            android:text="System Programming"
+                            android:textColor="@color/green"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/datastruct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/rounded_background">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/datastruct"
+                        app:shapeAppearanceOverlay="@style/corner" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginEnd="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/chakrapetchbold"
+                            android:text="Data Structures"
+                            android:textColor="@color/green"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/btn_exit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/background_btn"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    android:fontFamily="@font/chakrapetchbold"
+                    android:textSize="20sp"
+                    android:padding="8dp"
+                    android:text="exit" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
